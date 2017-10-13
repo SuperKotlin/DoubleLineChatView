@@ -1,7 +1,7 @@
 #CircleProgressBar
 ##效果演示:
 
- - 详细介绍博客：[自定义View_柱形图-玩一把牛逼的~](http://www.jianshu.com/p/3cfcdde05ea8)
+ - 详细介绍博客：[自定义View_柱形图-玩一把牛逼的~](http://www.jianshu.com/p/62f76e8d2075)
 
 ![](/art/DoubleLineChatView.gif)
 
