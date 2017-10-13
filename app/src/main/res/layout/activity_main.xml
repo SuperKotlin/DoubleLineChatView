@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.zhuyong.doublelinechatview.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:background="#DEDEDE"
+        android:scrollbars="none">
+
+        <com.zhuyong.doublelinechatview.DoubleLineChatView
+            android:id="@+id/line_chat_one"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:chatview_animation_duration="0"
+            app:chatview_left_background_color="@color/colorAccent"
+            app:chatview_left_text_data_color="@color/colorAccent"
+            app:chatview_line_big_distance="20dp"
+            app:chatview_line_small_distance="3dp"
+            app:chatview_line_width="25dp"
+            app:chatview_right_background_color="@color/colorPrimaryDark"
+            app:chatview_right_text_data_color="@color/colorPrimaryDark"
+            app:chatview_show_arrow="true"
+            app:chatview_show_y_interval="true"
+            app:chatview_text_data_size="14sp"
+            app:chatview_text_xy_color="@color/black"
+            app:chatview_text_xy_size="14sp"
+            app:chatview_x_distance="40dp"
+            app:chatview_y_distance="45dp" />
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始动画" />
+
+        <LinearLayout
+            android:id="@+id/llayout_uncheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@color/yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="未审核数" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/llayout_uncheck"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="已审核数" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.zhuyong.doublelinechatview.DoubleLineChatView
+        android:id="@+id/line_chat_two"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        app:chatview_animation_duration="1000"
+        app:chatview_left_background_color="@color/yellow"
+        app:chatview_left_text_data_color="@color/yellow"
+        app:chatview_line_big_distance="20dp"
+        app:chatview_line_small_distance="3dp"
+        app:chatview_line_width="25dp"
+        app:chatview_right_background_color="@color/green"
+        app:chatview_right_text_data_color="@color/green"
+        app:chatview_show_arrow="true"
+        app:chatview_show_y_interval="true"
+        app:chatview_text_data_size="14sp"
+        app:chatview_text_xy_color="@color/black"
+        app:chatview_text_xy_size="14sp"
+        app:chatview_x_distance="40dp"
+        app:chatview_y_distance="45dp" />
+
+</LinearLayout>
